@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Petypie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Petypie</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="health.html">Health Records</a>
+            <a href="HealthAssistant.html">Health Assistant</a>
+            <a href="shop.html">Pet-iShop</a>
+            <a href="community.html">Community</a>
+            <a href="services.html">Services</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="Calmer.html">Calming Animals</a>
+        </div>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <main class="events-section">
+        <div class="events-header">
+            <h1>Upcoming Pet Events</h1>
+            <p>Join our vibrant pet community at these exciting events. From meetups to shows, there's something for every pet lover!</p>
+        </div>
+
+        <div class="events-filter">
+            <button class="filter-btn active" data-filter="all">All Events</button>
+            <button class="filter-btn" data-filter="meetup">Meetups</button>
+            <button class="filter-btn" data-filter="show">Shows</button>
+            <button class="filter-btn" data-filter="adoption">Adoption</button>
+        </div>
+        
+        <div class="events-grid">
+            <div class="event-card" data-category="meetup">
+                <div class="event-image">
+                    <img src="https://s3-us-west-1.amazonaws.com/assets.wagwalkingweb.com/media/daily_wag/blog_articles/body/1652985555.1716046/how-to-host-your-own-dog-meetup-event-3.png" alt="Dogs and owners gathering at a park for a social meetup">
+                </div>
+                <div class="event-details">
+                    <span class="event-tag">Meetup</span>
+                    <h3>Weekend Pet Meetup</h3>
+                    <div class="event-info">
+                        <p class="event-date"><i class="far fa-calendar"></i> March 1, 2024</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 2:00 PM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Central Park</p>
+                    </div>
+                    <p class="event-description">Join us for a fun-filled afternoon with fellow pet owners. Bring your furry friends for playtime and socialization!</p>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+            
+            <div class="event-card" data-category="show">
+                <div class="event-image">
+                    <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2023/01/17150433/Fashion-show-for-dogs-806x806.jpg" alt="Pet fashion show">
+                </div>
+                <div class="event-details">
+                    <span class="event-tag">Show</span>
+                    <h3>Annual Pet Show</h3>
+                    <div class="event-info">
+                        <p class="event-date"><i class="far fa-calendar"></i> March 15, 2024</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 1:00 PM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> City Convention Center</p>
+                    </div>
+                    <p class="event-description">Showcase your pet's talents at our prestigious annual show. Prizes and recognition await!</p>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+            
+            <div class="event-card" data-category="adoption">
+                <div class="event-image">
+                    <img src="https://www.thesprucepets.com/thmb/GjF1K0XUeVR8GDJ2pLh9i8qkFa0=/1500x0/filters:no_upscale():strip_icc()/GettyImages-1204216250-4ff8b48b5b0b41738dc5691d3f2614de.jpg" alt="Pet adoption event">
+                </div>
+                <div class="event-details">
+                    <span class="event-tag">Adoption</span>
+                    <h3>Monthly Adoption Drive</h3>
+                    <div class="event-info">
+                        <p class="event-date"><i class="far fa-calendar"></i> March 30, 2024</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 10:00 AM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> City Animal Shelter</p>
+                    </div>
+                    <p class="event-description">Find your perfect companion at our monthly adoption drive. All pets are vaccinated and ready for their forever homes.</p>
+                    <a href="#" class="register-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured-events">
+            <h2>Featured Event</h2>
+            <div class="event-card featured" data-category="show">
+                <div class="event-image">
+                    <img src="https://www.akc.org/wp-content/uploads/2017/11/Pembroke-Welsh-Corgi-running-in-the-grass.jpg" alt="Pet Olympics event">
+                </div>
+                <div class="event-details">
+                    <span class="event-tag">Special</span>
+                    <h3>Pet Olympics 2024</h3>
+                    <div class="event-info">
+                        <p class="event-date"><i class="far fa-calendar"></i> April 15, 2024</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 9:00 AM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> City Sports Complex</p>
+                    </div>
+                    <p class="event-description">Join us for the biggest pet event of the year! Watch amazing performances and participate in fun competitions.</p>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Petypie</h3>
+                <p>Your one-stop platform for all pet-related needs</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Petypie. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
